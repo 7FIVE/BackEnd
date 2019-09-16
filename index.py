@@ -1,10 +1,3 @@
-# import aiml
-# #import json
-
-
-# kernel = aiml.Kernel()
-# kernel.learn('std-statup.xml')
-# kernel.respond('load aiml b')
 
 import tornado.ioloop
 import tornado.web
@@ -12,17 +5,19 @@ import tornado.websocket
 import aiml # AIML para tratamento de 
 import json
 from wit import Wit
+
 client = Wit('LNJEET2BYVHREQ5VNTZUSWKBWJTAJZFN')
 k = aiml.Kernel()
 k.learn('std-startup.xml')
 k.respond('load aiml b')
+
 """
 Exemplo de requisição post ele tem que receber:
 
 {
     "message": "onde encontro mentoria?",
     "user":"me",
-    "event":"chat, ",
+    "event":"chat (chat, funcao),evento",
     "tempoativo":"25",
     "click": "",
     "id": ""
@@ -50,7 +45,7 @@ class MainHandler(tornado.web.RequestHandler):
 
 class SimpleWebSocket(tornado.websocket.WebSocketHandler):
     connections = set()
-
+    
     def open(self):
         self.connections.add(self)
 
