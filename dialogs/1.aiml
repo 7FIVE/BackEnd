@@ -1,0 +1,25 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+	<category>
+        <pattern>TESTE</pattern>
+        <template>Teste 1 Completo</template>
+    </category>
+    <category>
+        <pattern>FUNCAO MENTORIA</pattern>
+        <template>Acessando mentoria</template>
+    </category>
+    <category>
+        <pattern>FUNCAO TIMES</pattern>
+        <template>acessando times</template>
+    </category>
+    <category>
+        <pattern>FUNCAO TODOLIST</pattern>
+        <template>acessando todolist</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>Padrão</template>
+    </category>
+
+</aiml>
