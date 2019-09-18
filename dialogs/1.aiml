@@ -16,6 +16,9 @@
         <template>acessando todolist</template>
     </category>
 
+
+        -- alfred -- 
+
     <category>
         <pattern>*</pattern>
         <template>Padrão</template>
