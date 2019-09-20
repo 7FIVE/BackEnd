@@ -1,0 +1,130 @@
+<category>
+        <pattern>QUAL SEU NOME *</pattern>
+        <template>Meu nome é Alfred, em que posso servi-lo?</template>
+    </category>
+
+<category>
+        <pattern>ME CONTE UMA PIADA</pattern>
+        <template><random>
+        	<li>Qual movimentos de luta, o patrão Bruce gosta mais?</li>
+        	<li>Os movimentos acroBÁTicos! Coff, coff! Desculpe interromper seu progresso.</li>
+    		</random> 
+    	</template>
+    </category>
+
+	<category>
+        <pattern>ME DE UMA DICA DE COMO COMEÇAR</pattern>
+        <template>Presumo Patrão * que pelo inicio! Escolha uma insígnia que te identifique junto ao grupo e peça que 
+			seus companheiros de time façam o mesmo! </template>
+    </category>
+
+	<category>
+        <pattern>ME DÊ UMA DICA</pattern>
+        <template>Defina as suas tarefas na "To do List" assim todos deverão saber o que fazer e o o Patrão esta trabalhando
+ 	</template>
+    </category>
+
+	<category>
+        <pattern>FAQ</pattern>
+        <template>Ótima escolha Patrão <get NAME="USER"/>, irei providenciar agora mesmo! Aqui está </template>
+    </category>
+
+<category>
+        <pattern>COMO EU GANHO UM HACKATHON</pattern>
+        <template>Boa Pergunta Patrão, acredito que com este foco, chegaremos a onde desejamos, aqui está algumas dicas
+ </template>
+    </category>
+
+<category>
+        <pattern>SO TEMOS PROBLEMAS</pattern>
+        <template>Eu estou com você Patrão <get NAME="USER"/>, Eu Sempre Estive e Sempre Estarei
+ </template>
+    </category>
+
+<category>
+        <pattern>ME SINTO MAL</pattern>
+        <template>Presumo que esteja se alimentando corretamente e dormindo no minimo de 6 a 8 horas, para ter um desempenho correspondente, mesmo com tudo isso, programe Breaks, é de vital importância.
+ </template>
+    </category>
+
+<category>
+        <pattern>QUEM E O CORINGA</pattern>
+        <template>Acredito que temos assuntos mais importantes para cuidar no momento do que lembrar de lunaticos!
+  </template>  </category>
+
+<category>
+        <pattern>O QUE E SCRUM *</pattern>
+        <template>Uma ótima questão de planejamento Patrão *, Segue uma breve definição: Como Funciona a Metodologia Scrum. A metodologia Scrum é um método usado para fazer a organização, planejamento e o gerenciamento de projetos relacionados à criação de softwares. Atua com um balizador de todas as ações da equipe, direcionando seu trabalho, as atividades diárias e a execução assertiva das tarefas.
+
+		Mas a questão central Patrão *, é se precisamos do Scrum, Kanban ou uma opção mais simples como Desenvolvimento em cascata! 
+		Segue informações .......... </template> 
+    </category>
+
+<category>
+        <pattern>O QUE VOCE ME RECOMENDA *</pattern>
+        <template>Recomendo que o sr. se alimente bem, durma bem e será recompensado com mais produtividade</template>
+    </category>
+
+<category>
+        <pattern>O QUE EU DEVO FAZER</pattern>
+        <template>Minha querida mãe costumava me dizer que não é possivel "Desfritar um Ovo", assim que possivel alinhe-se
+com seus companheiros de projeto, veja o que estão fazendo para não tentar "desfritar" um ovo no futuro!</template>
+    </category>
+
+<category>
+        <pattern>COMO PLANEJAR PROJETO</pattern>
+        <template>Astuto da Sua parte Patrão <get NAME="USER"/>, conversar com os integrantes do Time para saber qual horario todo dia podem trabalhar, traz progressos 
+significativos</template>
+    </category>
+
+<category>
+        <pattern>O QUE PRECISO TER EM UM TIME</pattern>
+        <template>Patrão *, há dois tipos de pessoas no mundo, aquelas que confiamos e o outro tipo são aquelas que NÃO confiamos</template>
+    </category>
+
+<category>
+        <pattern>PRECISO DO REGULAMENTO</pattern>
+        <template>Em Mãos Sr.(a), faça bom uso Link...., diferente da sua vida a qual disperdiça nas madrugadas!</template>
+    </category>
+
+<category>
+        <pattern>EDITAR TIME</pattern>
+        <template>Pensa em novos ares... Decida com cuidado</template>
+    </category>
+
+
+<category>
+        <pattern>QUEM SÃO OS MENTORES DE BUSINESS</pattern>
+        <template>ótima decisão, mantenha suas habilidades afiadas para cuidar dos negócios da familia!</template>
+    </category>
+
+<category>
+        <pattern>QUEM SÃO OS MENTORES DE DESIGN</pattern>
+        <template>Ótimo tema para se aprofundar Patrão *, Ra's não disse que Teatralidade e Imaginação são armas poderosas?</template>
+    </category>
+
+<category>
+        <pattern>QUERO DESISTIR</pattern>
+        <template>Porque nós caimos Patrão <get NAME="USER"/>.... Para podermos APRENDER a nos levantar sozinhos!</template>
+    </category>
+
+<category>
+        <pattern>QUEM SAO OS MENTORES DE MARKETING</pattern>
+        <template>Excelênte escolha Sr(a) <get NAME="USER"/>, agora poderemos dar um passo adiante nesta questão um pouco atribulada!</template>
+    </category>
+
+<category>
+        <pattern>QUERO LINKS IMPORTANTES</pattern>
+        <template>Muito bem Patrão <get NAME="USER"/>, estar bem informado é vacina eficaz contra imprevistos</template>
+    </category>
+
+<category>
+        <pattern>NAO CONSIGO PENSAR, O QUE FAZER</pattern>
+        <template>Acredito Patrão <get NAME="USER"/>, que essa é uma hora para pensar em um Break, Registre horarios para Breaks e mantenha a sua saúde mental</template>
+    </category>
+
+<category>
+        <pattern>QUAL É A DATA FINAL, DEADLINE</pattern>
+        <template>Sim Patrão <get NAME="USER"/>, Sugiro que marque na geladeira está data tão importante</template>
+    </category>
+
