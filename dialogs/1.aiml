@@ -17,12 +17,12 @@
     </category>
 
     <category>
-        <pattern>QUAL SEU NOME *</pattern>
+        <pattern>SEU NOME *</pattern>
         <template>Meu nome é Alfred, em que posso servi-lo?</template>
     </category>
 
     <category>
-        <pattern>ME CONTE UMA PIADA</pattern>
+        <pattern>CONTE PIADA</pattern>
         <template><random>
             <li>Qual movimentos de luta, o patrão Bruce gosta mais?</li>
             <li>Os movimentos acroBÁTicos! Coff, coff! Desculpe interromper seu progresso.</li>
@@ -31,73 +31,83 @@
     </category>
 
     <category>
-        <pattern>ME DE UMA DICA DE COMO COMEÇAR</pattern>
+        <pattern>DICA COMO COMEÇAR</pattern>
         <template>Presumo Patrão * que pelo inicio! Escolha uma insígnia que te identifique junto ao grupo e peça que seus companheiros de time façam o mesmo! </template>
     </category>
 
     <category>
-        <pattern>ME DE UMA DICA</pattern>
+        <pattern>DICA</pattern>
         <template>Defina as suas tarefas na "To do List" assim todos deverão saber o que fazer e o o Patrão esta trabalhando
     </template>
     </category>
 
     <category>
         <pattern>FAQ</pattern>
-        <template>Ótima escolha Patrão <get NAME="USER"/>, irei providenciar agora mesmo! Aqui está </template>
+        <template>Ótima escolha Patrão <get name="n"/>, irei providenciar agora mesmo! Aqui está </template>
     </category>
 
     <category>
-        <pattern>COMO EU GANHO UM HACKATHON</pattern>
+        <pattern>COMO GANHO HACKATHON</pattern>
         <template>Boa Pergunta Patrão, acredito que com este foco, chegaremos a onde desejamos, aqui está algumas dicas
     </template>
     </category>
 
     <category>
-        <pattern>SO TEMOS PROBLEMAS</pattern>
-        <template>Eu estou com você Patrão <get NAME="USER"/>, Eu Sempre Estive e Sempre Estarei </template>
+        <pattern>TEMOS PROBLEMAS</pattern>
+        <template>Eu estou com você Patrão <get name="n"/>, Eu Sempre Estive e Sempre Estarei </template>
     </category>
 
     <category>
-        <pattern>ME SINTO MAL</pattern>
+        <pattern>SINTO MAL</pattern>
+        <template>Presumo que esteja se alimentando corretamente e dormindo no minimo de 6 a 8 horas, para ter um desempenho correspondente, mesmo com tudo isso, programe Breaks, é de vital importância. </template>
+    </category>
+    <category>
+        <pattern>SINTO MAU</pattern>
         <template>Presumo que esteja se alimentando corretamente e dormindo no minimo de 6 a 8 horas, para ter um desempenho correspondente, mesmo com tudo isso, programe Breaks, é de vital importância. </template>
     </category>
 
     <category>
-        <pattern>QUEM E O CORINGA</pattern>
+        <pattern>QUEM CORINGA</pattern>
         <template>Acredito que temos assuntos mais importantes para cuidar no momento do que lembrar de lunaticos!</template>
     </category>
 
     <category>
-        <pattern>O QUE E SCRUM *</pattern>
-        <template>Uma ótima questão de planejamento Patrão *, Segue uma breve definição: Como Funciona a Metodologia Scrum. A metodologia Scrum é um método usado para fazer a organização, planejamento e o gerenciamento de projetos relacionados à criação de softwares. Atua com um balizador de todas as ações da equipe, direcionando seu trabalho, as atividades diárias e a execução assertiva das tarefas.
-
-        Mas a questão central Patrão *, é se precisamos do Scrum, Kanban ou uma opção mais simples como Desenvolvimento em cascata! 
+        <pattern>QUE SCRUM</pattern>
+        <template>Uma ótima questão de planejamento Patrão <get name="n"/>, Segue uma breve definição:
+        
+        Como Funciona a Metodologia Scrum.A metodologia Scrum é um método usado para fazer a organização, planejamento e o gerenciamento de projetos relacionados à criação de softwares. Atua com um balizador de todas as ações da equipe, direcionando seu trabalho, as atividades diárias e a execução assertiva das tarefas.
+        
+        Mas a questão central Patrão <get name="n"/>, é se precisamos do Scrum, Kanban ou uma opção mais simples como Desenvolvimento em cascata! 
         Segue informações .......... </template> 
     </category>
 
     <category>
-        <pattern>O QUE VOCE ME RECOMENDA *</pattern>
+        <pattern>QUE RECOMENDA *</pattern>
+        <template>Recomendo que o sr. se alimente bem, durma bem e será recompensado com mais produtividade</template>
+    </category>
+    <category>
+        <pattern>QUE RECOMENDA</pattern>
         <template>Recomendo que o sr. se alimente bem, durma bem e será recompensado com mais produtividade</template>
     </category>
 
     <category>
-        <pattern>O QUE EU DEVO FAZER</pattern>
+        <pattern>QUE DEVO FAZER</pattern>
         <template>Minha querida mãe costumava me dizer que não é possivel "Desfritar um Ovo", assim que possivel alinhe-se com seus companheiros de projeto, veja o que estão fazendo para não tentar "desfritar" um ovo no futuro!</template>
     </category>
 
     <category>
         <pattern>COMO PLANEJAR PROJETO</pattern>
-        <template>Astuto da Sua parte Patrão <get NAME="USER"/>, conversar com os integrantes do Time para saber qual horario todo dia podem trabalhar, traz progressos significativos</template>
+        <template>Astuto da Sua parte Patrão <get name="n"/>, conversar com os integrantes do Time para saber qual horario todo dia podem trabalhar, traz progressos significativos</template>
     </category>
 
     <category>
-        <pattern>O QUE PRECISO TER EM UM TIME</pattern>
-        <template>Patrão <get NAME="USER"/>, há dois tipos de pessoas no mundo, aquelas que confiamos e o outro tipo são aquelas que NÃO confiamos</template>
+        <pattern>QUE PRECISO TER TIME</pattern>
+        <template>Patrão <get name="n"/>, há dois tipos de pessoas no mundo, aquelas que confiamos e o outro tipo são aquelas que NÃO confiamos</template>
     </category>
 
     <category>
-        <pattern>PRECISO DO REGULAMENTO</pattern>
-        <template>Em Mãos Sr., faça bom uso Link...., diferente da sua vida a qual disperdiça nas madrugadas!</template>
+        <pattern>PRECISO REGULAMENTO</pattern>
+        <template>Em Mãos Sr. <get name="n"/>, faça bom uso Link...., diferente da sua vida a qual disperdiça nas madrugadas!</template>
     </category>
 
     <category>
@@ -105,46 +115,57 @@
         <template>Pensa em novos ares... Decida com cuidado</template>
     </category>
 
-
     <category>
-        <pattern>QUEM SAO OS MENTORES DE BUSINESS</pattern>
+        <pattern>QUEM MENTORES BUSINESS</pattern>
         <template>ótima decisão, mantenha suas habilidades afiadas para cuidar dos negócios da familia!</template>
     </category>
 
     <category>
-        <pattern>QUEM SAO OS MENTORES DE DESIGN</pattern>
+        <pattern>QUEM MENTORES DESIGN</pattern>
         <template>Ótimo tema para se aprofundar Patrão *, Ra's não disse que Teatralidade e Imaginação são armas poderosas?</template>
     </category>
 
     <category>
         <pattern>QUERO DESISTIR</pattern>
-        <template>Porque nós caimos Patrão <get NAME="USER"/>.... Para podermos APRENDER a nos levantar sozinhos!</template>
+        <template>Porque nós caimos Patrão <get name="n"/>.... Para podermos APRENDER a nos levantar sozinhos!</template>
     </category>
 
     <category>
-        <pattern>QUEM SAO OS MENTORES DE MARKETING</pattern>
-        <template>Excelênte escolha Sr(a) <get NAME="USER"/>, agora poderemos dar um passo adiante nesta questão um pouco atribulada!</template>
+        <pattern>QUEM MENTORES MARKETING</pattern>
+        <template>Excelênte escolha Sr(a) <get name="n"/>, agora poderemos dar um passo adiante nesta questão um pouco atribulada!</template>
     </category>
 
     <category>
         <pattern>QUERO LINKS IMPORTANTES</pattern>
-        <template>Muito bem Patrão <get NAME="USER"/>, estar bem informado é vacina eficaz contra imprevistos</template>
+        <template>Muito bem Patrão <get name="n"/>, estar bem informado é vacina eficaz contra imprevistos</template>
     </category>
 
     <category>
-        <pattern>NAO CONSIGO PENSAR, O QUE FAZER</pattern>
-        <template>Acredito Patrão <get NAME="USER"/>, que essa é uma hora para pensar em um Break, Registre horarios para Breaks e mantenha a sua saúde mental</template>
+        <pattern>NAO CONSIGO PENSAR FAZER</pattern>
+        <template>Acredito Patrão <get name="n"/>, que essa é uma hora para pensar em um Break, Registre horarios para Breaks e mantenha a sua saúde mental</template>
     </category>
+    <category>
+        <pattern>NAO CONSIGO PENSAR</pattern>
+        <template>Acredito Patrão <get name="n"/>, que essa é uma hora para pensar em um Break, Registre horarios para Breaks e mantenha a sua saúde mental</template>
+    </category>
+    
 
     <category>
-        <pattern>QUAL É A DATA FINAL, DEADLINE</pattern>
-        <template>Sim Patrão <get NAME="USER"/>, Sugiro que marque na geladeira está data tão importante</template>
+        <pattern>DATA FINAL DEADLINE</pattern>
+        <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
     </category>
-
+    <category>
+        <pattern>DATA FINAL</pattern>
+        <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
+    </category>
+    <category>
+        <pattern>DEADLINE</pattern>
+        <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
+    </category>
 
     <category>
         <pattern>*</pattern>
-        <template>Padrão</template>
+        <template>Desculpe Sr(a). <get name="n"/>, não posso ser útil</template>
     </category>
 
 </aiml>

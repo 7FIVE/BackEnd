@@ -3,3 +3,4 @@
 pip3 install tornado
 pip3 install python-aiml
 pip3 install wit
+pip3 install nltk

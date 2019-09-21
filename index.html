@@ -20,7 +20,8 @@
         var message = messageInput.value;
         var payload = {
             "message": message,
-            "user": username
+            "user": username,
+            "id": "123"
         }
         // Make the request to the WebSocket.
         ws.send(JSON.stringify(payload));
