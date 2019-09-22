@@ -71,7 +71,6 @@ class MainHandler(tornado.web.RequestHandler):
 
             if tags == "message" and data[tags] == 'sair':
                 response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
-                client.write_message(response)
                 exit()
         self.write(response)
 
