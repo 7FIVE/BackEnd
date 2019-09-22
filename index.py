@@ -64,7 +64,7 @@ class MainHandler(tornado.web.RequestHandler):
                 print(utk.detokenize(filter))
                 response = json.loads('{"message":"'+k.respond(utk.detokenize(filter),data['id'])+'","user":"Alfred"}')
 
-            if tags == "message" and data[tags] == 'sair':
+            if tags == "message" and data[tags] == 'sair' or data[tags] == 'exit':
                 response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
                 exit()
         self.write(response)

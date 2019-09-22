@@ -1,0 +1,216 @@
+<aiml version = "1.0.1" encoding = "UTF-8">
+    <category>
+        <pattern>Hi</pattern>
+        <template> Hi Master <get name = "n" />. Shall we work on hackathon? </template>
+    </category>
+    <category>
+        <pattern> HELLO </pattern>
+        <template> Hello Master <get name = "n" />. Shall we work on hackathon? </template>
+    </category>
+    <category>
+        <pattern> HI </pattern>
+        <template> Hello Master <get name = "n" />. Shall we work on hackathon? </template>
+    </category>
+    <category>
+        <pattern> Lets go </pattern>
+        <template> How much animation! Anything ask me. </template>
+    </category>
+    
+<category>
+        <pattern> TEST </pattern>
+        <template> Complete Test 1 </template>
+    </category>
+    <category>
+        <pattern> MENTOR FUNCTION </pattern>
+        <template> Accessing mentoring </template>
+    </category>
+    <category>
+        <pattern> TIMES FUNCTION </pattern>
+        <template> accessing teams </template>
+    </category>
+    <category>
+        <pattern> TODOLIST FUNCTION </pattern>
+        <template> accessing todolist </template>
+    </category>
+
+    <category>
+        <pattern> YOUR NAME * </pattern>
+        <template> My name is Alfred, where can I serve you? </template>
+    </category>
+
+    <category>
+        <pattern> CONTACT JOKE </pattern>
+        <template> <random>
+            <li> Which fighting moves does Master Bruce like best? </li>
+            <li> The acrobatic movements! Coff, coff! Sorry to interrupt your progress. </li>
+            </random>
+        </template>
+    </category>
+<category>
+        <pattern> TIP HOW TO START </pattern>
+        <template> I assume Master * that at the beginning! Choose an insignia that identifies you with the group and ask your teammates to do the same! </template>
+    </category>
+
+    <category>
+        <pattern> TIP </pattern>
+        <template> Set your tasks in "To do List" so everyone should know what to do and the Master is working
+    </template>
+    </category>
+
+    <category>
+        <pattern> FAQ </pattern>
+        <template> Great choice Master <get name = "n" />, I will arrange right now! Here it is </template>
+    </category>
+
+    <category>
+        <pattern> HOW TO MAKE HACKATHON </pattern>
+        <template> Good Question Master, I believe with this focus we will get to where we want, here are some tips
+    </template>
+    </category>
+    <category>
+        <pattern> HOW TO WIN HACKATHON </pattern>
+        <template> Good Question Master, I believe with this focus we will get to where we want, here are some tips
+    </template>
+    </category>
+    <category>
+        <pattern> WE HAVE PROBLEMS </pattern>
+        <template> I'm with you Master <get name = "n" />, I've always been and always will be </template>
+    </category>
+    <category>
+        <pattern> FEELING EVIL </pattern>
+        <template> I assume that you are eating properly and sleeping for at least 6 to 8 hours, to perform accordingly, even with all that, Schedule Breaks, is of vital importance. </template>
+    </category>
+    <category>
+        <pattern> BAD FEELING </pattern>
+        <template> I assume that you are eating properly and sleeping for at least 6 to 8 hours, to perform accordingly, even with all that, Schedule Breaks, is of vital importance. </template>
+    </category>
+    <category>
+        <pattern> WHO JAMES </pattern>
+        <template> I think we have more important matters to take care of right now than remembering lunatics! </template>
+    </category>
+    <category>
+        <pattern> QUIT * </pattern>
+
+        <template> The first step in fixing mistakes and winning is to be realistic as you are <get name = "n" />. </template>
+    </category>
+<category>
+        <pattern> WHAT SCRUM </pattern>
+        <template> A great planning question Master <get name = "n" />.
+        How the Scrum Methodology Works.The Scrum Methodology is a method used to do the organization, planning and project management related to software creation. It acts as a marker of all team actions, directing their work, daily activities and the assertive execution of tasks.
+        </template>
+    </category>
+
+    <category>
+        <pattern> WHAT SCRUM * </pattern>
+        <template> A great planning question Master <get name = "n" />.
+        How the Scrum Methodology Works.The Scrum Methodology is a method used to do the organization, planning and project management related to software creation. It acts as a marker of all team actions, directing their work, daily activities and the assertive execution of tasks.
+        <srai><star/> </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern> RECOMMENDING * </pattern>
+        <template> I recommend that mr. eat well, sleep well and you will be rewarded with more productivity </template>
+    </category>
+    <category>
+        <pattern> RECOMMENDING </pattern>
+        <template> I recommend that mr. eat well, sleep well and you will be rewarded with more productivity </template>
+    </category>
+
+    <category>
+        <pattern> WHAT SHOULD I DO </pattern>
+        <template> My dear mother used to tell me that it is not possible to "Enjoy an Egg", so as soon as possible align with your project mates, see what they are doing not to try to "enjoy" an egg in the future! </template >
+    </category>
+
+    <category>
+        <pattern> HOW TO PLAN PROJECT </pattern>
+        <template> Crafty of Your Master <get name = "n" />, chatting with Team members to find out what time each day can work brings significant progress </template>
+    </category>
+
+    <category>
+        <pattern> I NEED TO HAVE TIME </pattern>
+        <template> Master <get name = "n" />, there are two types of people in the world, the ones we trust and the other type are the ones we don't trust </template>
+    </category>
+
+    <category>
+        <pattern> I NEED REGULATION </pattern>
+        <template> In Mr. Hands <get name = "n" />, make good use of Link ...., unlike your life which wastes at dawn! </template>
+    </category>
+
+    <category>
+        <pattern> EDIT TIME </pattern>
+        <template> Think about new airs ... Decide carefully </template>
+    </category>
+
+    <category>
+        <pattern> WHO BUSINESS MENTORS </pattern>
+        <template> Great decision, keep your skills sharp for running the family business! </template>
+    </category>
+
+    <category>
+        <pattern> WHO DESIGN MENTORS </pattern>
+        <template> Great theme to delve into Master *, didn't Ra's say that Theatricality and Imagination are powerful weapons? </template>
+    </category>
+    
+    <category>
+        <pattern> QUIT </pattern>
+        <template> Because we fall Master <get name = "n" /> .... So we can LEARN to get up alone! </template>
+    </category>
+    <category>
+        <pattern> QUIT * </pattern>
+        
+        <template> Because we fall Master <get name = "n" /> .... So we can LEARN to get up alone! <srai><star/></srai> </template>
+    </category>
+    <category>
+        <pattern> ALL WRONG SHIT PROJECT </pattern>
+        
+        <template> Schedule your BREAKS, for eating, resting and stretching, your health is vital to victory, Master <get name = "n" />. <srai><star/></srai> </template>
+    </category>
+<category>
+        <pattern> WHO MARKETING MENTORS </pattern>
+        <template> Great choice Mr <get name = "n" />, now we can go a step further on this somewhat troubled question! </template>
+    </category>
+    <category>
+        <pattern> I want important links </pattern>
+        <template> Very well Master <get name = "n" />, being well informed is effective vaccine against unforeseen events </template>
+    </category>
+
+    <category>
+        <pattern> I can't think of doing </pattern>
+        <template> I believe Master <get name = "n" />, this is a time to think about a Break, Record Breaks Time and Maintain Your Mental Health </template>
+    </category>
+    <category>
+        <pattern> I CAN'T THINK </pattern>
+        <template> I believe Master <get name = "n" />, this is a time to think about a Break, Record Breaks Time and Maintain Your Mental Health </template>
+    </category>
+    <category>
+        <pattern> DEADLINE FINAL DATE </pattern>
+        <template> Yes Master <get name = "n" />, I suggest checking in the fridge this important date </template>
+    </category>
+    <category>
+        <pattern> FINAL DATE </pattern>
+        <template> Yes Master <get name = "n" />, I suggest checking in the fridge this important date </template>
+    </category>
+    <category>
+        <pattern> DEADLINE </pattern>
+        <template> Yes Master <get name = "n" />, I suggest checking in the fridge this important date </template>
+    </category>
+    <category>
+        <pattern> FINAL DATE </pattern>
+        <template> Yes Master <get name = "n" />, I suggest checking in the fridge this important date </template>
+    </category>
+    <category>
+        <pattern> DATE LIMIT </pattern>
+        <template> I assume this information helps you Master <get name = "n" />. </template>
+    </category>
+    <category>
+        <pattern> NEED TO WIN HACKATHON </pattern>
+        <template> I will provide that Master <get name = "n" /> </template>
+    </category>
+    
+    <category>
+        <pattern> * </pattern>
+        <template> Sorry, sir. <get name = "n" /> I can't be helpful </template>
+    </category>
+
+</aiml>
