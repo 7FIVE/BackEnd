@@ -35,7 +35,9 @@ Exemplo de requisição post ele tem que receber:
 {
     "message":"OI!",
     "id":"123",
-    "timestamp": "14:23"}
+    "timestamp": "14:23",
+    "user":"Joselito"
+}
 """
 class bot(tornado.web.RequestHandler):
     def get(self):
@@ -98,11 +100,11 @@ class SimpleWebSocket(tornado.websocket.WebSocketHandler):
                 for tags in message.keys():
                     if tags == "message" and message[tags] != '': # aqui fazemos o tratamento das respostas
                         tokens = tk.tokenize(message[tags])
-                        k.setPredicate("n",message['user'],sessao)
+                        k.setPredicate("n",message['user'],message['id'])
                         filter = [w.lower() for w in tokens if w.lower() not in stopwords] # retirar stop words
                         print(tokens)
                         print(utk.detokenize(filter))
-                        response = json.loads('{"message":"'+k.respond(utk.detokenize(filter),sessao)+'","user":"Alfred"}')
+                        response = json.loads('{"message":"'+k.respond(utk.detokenize(filter),message['id'])+'","user":"Alfred"}')
 
                     if tags == "message" and message[tags] == 'sair':
                         response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
