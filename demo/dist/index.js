@@ -11268,12 +11268,12 @@ var LAppDefine;
     // モデルを配置したディレクトリ名の配列
     // ディレクトリ名とmodel3.jsonの名前を一致させておくこと
     LAppDefine.ModelDir = [
+        "Alfred",
         "Haru",
         "Hiyori",
         "Mark",
         "Natori",
-        "Rice",
-        "Alfred"
+        "Rice"
     ];
     LAppDefine.ModelDirSize = LAppDefine.ModelDir.length;
     // 外部定義ファイル（json）と合わせる

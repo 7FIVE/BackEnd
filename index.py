@@ -16,7 +16,7 @@ k.respond('load aiml b')
 sessao = 123
 tk = TweetTokenizer()
 utk = TreebankWordDetokenizer()
-stopwords = [',',':',';','.','?','tokeniza','eu','uma','um','de','qual','me','so','e','é','o','em','do','sao','os','as','alfred']
+stopwords = ['!',',',':',';','.','?','a','tokeniza','deu','esta','está','quero','eu','uma','um','de','qual','me','so','e','é','o','em','do','sao','os','as','alfred']
 
 """
 Exemplo de requisição post ele tem que receber:

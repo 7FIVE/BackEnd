@@ -1,4 +1,21 @@
 <aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>OI</pattern>
+        <template>Oi, Patrão <get name="n"/>. Vamos trabalhar no hackathon?</template>
+    </category>
+    <category>
+        <pattern>OLA</pattern>
+        <template>Olá, Patrão <get name="n"/>. Vamos trabalhar no hackathon?</template>
+    </category>
+    <category>
+        <pattern>EAE</pattern>
+        <template>Olá, Patrão <get name="n"/>. Vamos trabalhar no hackathon?</template>
+    </category>
+    <category>
+        <pattern>VAMOS</pattern>
+        <template>Quanta animação! Qualquer coisa me pergunte.</template>
+    </category>
+    
 	<category>
         <pattern>TESTE</pattern>
         <template>Teste 1 Completo</template>
@@ -51,12 +68,15 @@
         <template>Boa Pergunta Patrão, acredito que com este foco, chegaremos a onde desejamos, aqui está algumas dicas
     </template>
     </category>
-
+    <category>
+        <pattern>COMO GANHAR HACKATHON</pattern>
+        <template>Boa Pergunta Patrão, acredito que com este foco, chegaremos a onde desejamos, aqui está algumas dicas
+    </template>
+    </category>
     <category>
         <pattern>TEMOS PROBLEMAS</pattern>
         <template>Eu estou com você Patrão <get name="n"/>, Eu Sempre Estive e Sempre Estarei </template>
     </category>
-
     <category>
         <pattern>SINTO MAL</pattern>
         <template>Presumo que esteja se alimentando corretamente e dormindo no minimo de 6 a 8 horas, para ter um desempenho correspondente, mesmo com tudo isso, programe Breaks, é de vital importância. </template>
@@ -65,20 +85,28 @@
         <pattern>SINTO MAU</pattern>
         <template>Presumo que esteja se alimentando corretamente e dormindo no minimo de 6 a 8 horas, para ter um desempenho correspondente, mesmo com tudo isso, programe Breaks, é de vital importância. </template>
     </category>
-
     <category>
         <pattern>QUEM CORINGA</pattern>
         <template>Acredito que temos assuntos mais importantes para cuidar no momento do que lembrar de lunaticos!</template>
     </category>
+    <category>
+        <pattern>DESISTIR *</pattern>
 
+        <template>O Primeiro passo para consertar erros e ganhar, é ser realista como o Sr(a) <get name="n"/> está. </template>
+    </category>
     <category>
         <pattern>QUE SCRUM</pattern>
-        <template>Uma ótima questão de planejamento Patrão <get name="n"/>, Segue uma breve definição:
-        
+        <template>Uma ótima questão de planejamento Patrão <get name="n"/>.
         Como Funciona a Metodologia Scrum.A metodologia Scrum é um método usado para fazer a organização, planejamento e o gerenciamento de projetos relacionados à criação de softwares. Atua com um balizador de todas as ações da equipe, direcionando seu trabalho, as atividades diárias e a execução assertiva das tarefas.
-        
-        Mas a questão central Patrão <get name="n"/>, é se precisamos do Scrum, Kanban ou uma opção mais simples como Desenvolvimento em cascata! 
-        Segue informações .......... </template> 
+        </template> 
+    </category>
+
+    <category>
+        <pattern>QUE SCRUM *</pattern>
+        <template>Uma ótima questão de planejamento Patrão <get name="n"/>.
+        Como Funciona a Metodologia Scrum.A metodologia Scrum é um método usado para fazer a organização, planejamento e o gerenciamento de projetos relacionados à criação de softwares. Atua com um balizador de todas as ações da equipe, direcionando seu trabalho, as atividades diárias e a execução assertiva das tarefas.
+        <srai><star/></srai>
+        </template> 
     </category>
 
     <category>
@@ -124,17 +152,25 @@
         <pattern>QUEM MENTORES DESIGN</pattern>
         <template>Ótimo tema para se aprofundar Patrão *, Ra's não disse que Teatralidade e Imaginação são armas poderosas?</template>
     </category>
-
+    
     <category>
-        <pattern>QUERO DESISTIR</pattern>
+        <pattern>DESISTIR</pattern>
         <template>Porque nós caimos Patrão <get name="n"/>.... Para podermos APRENDER a nos levantar sozinhos!</template>
     </category>
-
+    <category>
+        <pattern>DESISTIR *</pattern>
+        
+        <template>Porque nós caimos Patrão <get name="n"/>.... Para podermos APRENDER a nos levantar sozinhos! <srai><star/></srai></template>
+    </category>
+    <category>
+        <pattern>TUDO ERRADO PROJETO MERDA</pattern>
+        
+        <template>Programe seus BREAKS, para comer,descançar e fazer alongamentos, sua saúde é vital para a vitória, Patrão <get name="n"/>. <srai><star/></srai></template>
+    </category>
     <category>
         <pattern>QUEM MENTORES MARKETING</pattern>
         <template>Excelênte escolha Sr(a) <get name="n"/>, agora poderemos dar um passo adiante nesta questão um pouco atribulada!</template>
     </category>
-
     <category>
         <pattern>QUERO LINKS IMPORTANTES</pattern>
         <template>Muito bem Patrão <get name="n"/>, estar bem informado é vacina eficaz contra imprevistos</template>
@@ -148,8 +184,6 @@
         <pattern>NAO CONSIGO PENSAR</pattern>
         <template>Acredito Patrão <get name="n"/>, que essa é uma hora para pensar em um Break, Registre horarios para Breaks e mantenha a sua saúde mental</template>
     </category>
-    
-
     <category>
         <pattern>DATA FINAL DEADLINE</pattern>
         <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
@@ -162,7 +196,19 @@
         <pattern>DEADLINE</pattern>
         <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
     </category>
-
+    <category>
+        <pattern>DATA FINAL</pattern>
+        <template>Sim Patrão <get name="n"/>, Sugiro que marque na geladeira está data tão importante</template>
+    </category>
+    <category>
+        <pattern>DATA LIMITE</pattern>
+        <template>Presumo que esta informação lhe ajude Patrão <get name="n"/>.</template>
+    </category>
+    <category>
+        <pattern>PRECISO GANHAR HACKATHON</pattern>
+        <template>Providenciarei isso Patrão <get name="n"/> </template>
+    </category>
+    
     <category>
         <pattern>*</pattern>
         <template>Desculpe Sr(a). <get name="n"/>, não posso ser útil</template>
