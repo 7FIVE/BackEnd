@@ -59,25 +59,20 @@ class MainHandler(tornado.web.RequestHandler):
     def post(self):#entrada de dados, reconhecimento do usuário, e designação de funções para as mensagens
         data = json.loads(self.request.body)#leitura do corpo da request
         response = ""
-        
-        filter = str(data2["entities"])
-        filter = filter.split(":")
-        filter = filter[0].replace("{","")
-        filter = filter.replace(":","")
-        
-        if data["event"] == "chat":
-            if filter != "":
-                response = json.loads('{"resposta":"'+k.respond("funcao "+filter)+'","user":"Pewee"}')
-            else:
-                response = json.loads('{"resposta":"'+k.respond(data["message"])+'","user":"Pewee"}')
-        else:
-            if data["event"] == "event":
-                if data["acao"] == "?" and data["parametro"] != "":
-                    response = json.loads('{"resposta":"Evento Solicitado" ,"user":"Pewee"}')
-                if data["acao"] == "inicial" and data["parametro"] != "":
-                    response = json.loads('{"resposta":"Evento Solicitado","user":"Pewee"}')
-                if data["acao"] == "tempo" and data["parametro"] != "":
-                    response = json.loads('{"resposta":"Evento Solicitado","user":"Pewee"}')
+        #data2 = client.message(message["message"])
+        for tags in data.keys():
+            if tags == "message" and data[tags] != '': # aqui fazemos o tratamento das respostas
+                tokens = tk.tokenize(data[tags])
+                k.setPredicate("n",data['user'],data['id'])
+                filter = [w.lower() for w in tokens if w.lower() not in stopwords] # retirar stop words
+                print(tokens)
+                print(utk.detokenize(filter))
+                response = json.loads('{"message":"'+k.respond(utk.detokenize(filter),data['id'])+'","user":"Alfred"}')
+
+            if tags == "message" and data[tags] == 'sair':
+                response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
+                client.write_message(response)
+                exit()
         self.write(response)
 
 
