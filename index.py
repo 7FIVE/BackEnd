@@ -41,15 +41,10 @@ Exemplo de requisição post ele tem que receber:
 """
 class bot(tornado.web.RequestHandler):
     def get(self):
-        self.render("demo/index.html")
+        self.write("{'status get': 'connected'}")
 
-class getJs1(tornado.web.RequestHandler):
-    def get(self):
-        self.render("demo/dist/index.js")
-
-class getJs2(tornado.web.RequestHandler):
-    def get(self):
-        self.render("demo/Core/live2dcubismcore.min.js")
+    def post(self):
+        self.write("{'status post': 'connected'}")
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -113,7 +108,7 @@ class SimpleWebSocket(tornado.websocket.WebSocketHandler):
 
 
 def make_app():
-    return tornado.web.Application([(r"/",MainHandler),(r"/websocket",SimpleWebSocket),(r"/dist/index.js",getJs1),(r"/Core/live2dcubismcore.min.js",getJs2),(r"/bot",bot)])
+    return tornado.web.Application([(r"/",MainHandler),(r"/websocket",SimpleWebSocket),(r"/bot",bot)])
 
 print("Running port "+str(port))
 app = make_app() #constroi a aplicação
