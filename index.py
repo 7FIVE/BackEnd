@@ -112,7 +112,9 @@ class SimpleWebSocket(tornado.websocket.WebSocketHandler):
 def make_app():
     return tornado.web.Application([(r"/",MainHandler),(r"/websocket",SimpleWebSocket),(r"/bot",bot)])
 
+
 print("Running port "+str(port))
-app = make_app() #constroi a aplicação
-app.listen(port) #abre a porta para conexao
-tornado.ioloop.IOLoop.current().start() #deixa em looping
+if __name__ == "__main__":
+    app = make_app() #constroi a aplicação
+    app.listen(globals()) #abre a porta para conexao
+    tornado.ioloop.IOLoop.current().start() #deixa em looping
