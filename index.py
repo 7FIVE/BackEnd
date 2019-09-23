@@ -4,6 +4,7 @@ import tornado.web
 import tornado.websocket
 import aiml # AIML para tratamento de 
 import json
+import os
 from nltk.tokenize import TweetTokenizer
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 from wit import Wit
@@ -113,8 +114,15 @@ def make_app():
     return tornado.web.Application([(r"/",MainHandler),(r"/websocket",SimpleWebSocket),(r"/bot",bot)])
 
 
-print("Running port "+str(port))
+
+
 if __name__ == "__main__":
-    app = make_app() #constroi a aplicação
-    app.listen(globals()) #abre a porta para conexao
-    tornado.ioloop.IOLoop.current().start() #deixa em looping
+    port = int(os.environ.get("PORT", 8080))
+    app = make_app()
+    print("Running port "+str(port))
+    app.listen(port)
+    tornado.ioloop.IOLoop.instance().start()
+# if __name__ == "__main__":
+#     app = make_app() #constroi a aplicação
+#     app.listen(8888) #abre a porta para conexao
+#     tornado.ioloop.IOLoop.current().start() #deixa em looping
