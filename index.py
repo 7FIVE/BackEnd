@@ -98,10 +98,10 @@ class SimpleWebSocket(tornado.websocket.WebSocketHandler):
                         print(utk.detokenize(filter))
                         response = json.loads('{"message":"'+k.respond(utk.detokenize(filter),message['id'])+'","user":"Alfred"}')
 
-                    if tags == "message" and message[tags] == 'sair':
-                        response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
-                        client.write_message(response)
-                        exit()
+                    # if tags == "message" and message[tags] == 'sair':
+                    #     response = json.loads('{"message":"'+"Minha missão aqui foi concluida!, ADEUS!"+'","user":"Alfred"}')
+                    #     client.write_message(response)
+                    #     exit()
                 #response = json.loads('{"message":"'+k.respond(message["message"])+'","user":"Pewee"}')
                 client.write_message(response)
 
